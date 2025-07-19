@@ -11,5 +11,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', health_check),
     path('health/', health_check),
-    # path('api/', include('safaris.urls')),
+    path('api/', include('safaris.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
