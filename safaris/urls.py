@@ -3,7 +3,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
 from .auth import UserCreate, UserLogin
-from safaris.views import ContactMessageCreate, profile_view, edit_profile, submit_review, moderate_reviews, approve_review, subscribe_newsletter, HomePageView, AboutPageView, TeamMemberView, TestimonialView, user_profile, ChatMessageView, ItineraryViewSet, PackageViewSet, WishlistViewSet, BookingHistoryViewSet, FAQViewSet, BlogViewSet, GalleryViewSet, AccommodationEnquiryCreate, UserAccommodationEnquiryList, AccommodationEnquiryMessageCreate, AccommodationEnquiryMarkRead, AccommodationViewSet, SafariViewSet, DestinationViewSet, BookingViewSet, IntaSendInitiatePayment, IntaSendWebhook, pay_paypal, pay_mpesa, webhook_paypal, mpesa_callback
+from safaris.views import ContactMessageCreate, profile_view, edit_profile, submit_review, moderate_reviews, approve_review, subscribe_newsletter, HomePageView, AboutPageView, TeamMemberView, TestimonialView, user_profile, ChatMessageView, ItineraryViewSet, PackageViewSet, WishlistViewSet, BookingHistoryViewSet, FAQViewSet, BlogViewSet, GalleryViewSet, AccommodationEnquiryCreate, UserAccommodationEnquiryList, AccommodationEnquiryMessageCreate, AccommodationEnquiryMarkRead, AccommodationViewSet, SafariViewSet, DestinationViewSet, BookingViewSet, pay_paypal, pay_mpesa, webhook_paypal, mpesa_callback
+# Temporarily removed: IntaSendInitiatePayment, IntaSendWebhook
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenRefreshView
 
