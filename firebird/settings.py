@@ -69,11 +69,11 @@ WSGI_APPLICATION = 'firebird.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
+        'NAME': os.environ.get('DB_NAME', 'postgres'),
+        'USER': os.environ.get('DB_USER', 'postgres'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': 'db.twalppanlodxdwsqwe.supabase.co',
-        'PORT': '5432',
+        'HOST': os.environ.get('DB_HOST', 'db.twalppanlodxdwsqwe.supabase.co'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
         'OPTIONS': {
             'sslmode': 'require',
         },
