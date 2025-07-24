@@ -9,7 +9,11 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
 DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+ALLOWED_HOSTS = [
+    "api.solvotoursandsafaris.com",
+    "solvotours-backend.onrender.com",
+    # ...any others you need
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',

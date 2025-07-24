@@ -22,3 +22,9 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=3650),  # 10 years
     'REFRESH_TOKEN_LIFETIME': timedelta(days=3650),  # 10 years
 } 
+
+ALLOWED_HOSTS = [
+    "api.solvotoursandsafaris.com",
+    "solvotours-backend.onrender.com",
+    # ...any others you need
+] 
